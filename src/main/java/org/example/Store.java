@@ -29,6 +29,12 @@ public class Store implements ToyIn{
         }
 
     }
+
+    public Object getToy(int index){
+        return toys.remove(index);
+
+    }
+
     public void printList(){
         for (Object toy: toys
              ) {
