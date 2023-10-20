@@ -45,13 +45,13 @@ public class Main {
         storToys.addToy(duplo,5);
         storToys.addToy(macquien,1);
         storToys.addToy(barbie,2);
-        storToys.printList();
-        storToys.removeToy(barbie,2);
-        storToys.printList();
-        Draw onedraw = new Draw();
-        onedraw.addDraw(storToys.getToy(1));
-        MyFileWriter writToy = new MyFileWriter();
-        writToy.myWriter(onedraw.takeToy().toString());
+//        storToys.printList();
+//        storToys.removeToy(barbie,2);
+//        storToys.printList();
+//        Draw onedraw = new Draw();
+//        onedraw.addDraw(storToys.getToy(1));
+//        MyFileWriter writToy = new MyFileWriter();
+//        writToy.myWriter(onedraw.takeToy().toString());
 
 
     }

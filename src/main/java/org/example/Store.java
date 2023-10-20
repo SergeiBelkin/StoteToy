@@ -8,9 +8,11 @@ public class Store implements ToyIn{
 
     @Override
     public void addToy(Toy toy, int qantity) {
+        int id = toy.getId();
         for(int i = 0; i<qantity; i++){
-
+            System.out.println(id);
                 toys.add(toy);
+                toy.setId(id++);
 
         }
 
@@ -18,10 +20,11 @@ public class Store implements ToyIn{
 
     @Override
     public void removeToy(Toy toy, int qantity) {
-
+        int id = toy.getId();
         for(int i = qantity; i>0; i--){
             if(toys.contains(toy)){
                 toys.remove(toy);
+                toy.setId(id--);
             }else{
                 System.out.println("нет еще"+ i + toy.toString());
                 break;

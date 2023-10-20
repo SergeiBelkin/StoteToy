@@ -1,6 +1,24 @@
 package org.example;
 
 public abstract class Toy {
+    public int getWeight() {
+        return weight;
+    }
+
+    public void setWeight(int weight) {
+        this.weight = weight;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    private int weight;
+    private int id;
     public String name;
     private int probability;
 
